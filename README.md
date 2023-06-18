@@ -46,3 +46,32 @@
 | println(); | println!(); |
 
 Without ```!``` before a function will cause Rust to recognize it as function, which in example ```println``` will be interpreted as ```fn println()``` instead of printing out some text.
+
+**Example**
+
+    struct Person{
+      name: String,
+      age: i8,
+    }
+
+    impl Person{
+      fn greet(&self){
+        println!("Hello, my name is {}, and I am {} years old.",self.name, self.age)
+      }
+    }
+
+    pub(crate) fn main(){
+      let person = Person{
+        name: String::from("Nicholas"),
+        age: i8::from(30),
+      };
+
+      person.greet();
+    }
+
+```pub(crate)``` before ```fn main()``` is optional, even without it ```fn main()``` will execute normally.
+
+**Build**
+
+    cd <to_rust_project_folder>
+    cargo build
