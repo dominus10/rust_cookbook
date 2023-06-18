@@ -20,16 +20,16 @@ This is not a definitive guide, but aimed to be an entry point itself into Rust.
     
 ## Basic
 
-### **Functions, classes, and variables**
+### Functions, classes, and variables
 
 | JS/TS Concepts | Rust Concepts | Note |
 | --- | --- | --- |
 | class ClassName{} | struct structName{} | |
 |  | impl implName{} | Used to define function for struct |
 | function functionName{} | fn fnName(){} | |
-| let varName = <br/> const constName = | let mut varName =  <br/> let constName =  | (notice the use of mut) |
+| let varName = <br/> const constName = | let mut varName =  <br/> let constName =  | notice the use of ```mut```, check [Method Parameter](#method-parameter) |
 
-### **Primitives**
+### Primitives
 
 | Primitives | JS/TS Usage | Rust Usage | Note | Example |
 | --- | --- | --- | --- | --- |
@@ -41,7 +41,11 @@ This is not a definitive guide, but aimed to be an entry point itself into Rust.
 | Slice | - | &[T] <br/> &mut[T] | fixed <br/> mutable | let numbers_slice: &[i32] = &numbers[1..3]; |
 | Tuple | tuple | (T1, T2, ...) | | let person: (String, u32, bool) = ("Alice".to_string(), 25, true); |
 
-### **Macro**
+### Method Parameter
+
+
+
+### Macro
 
 | Function | Macro |
 | --- | --- |
@@ -49,7 +53,7 @@ This is not a definitive guide, but aimed to be an entry point itself into Rust.
 
 Without ```!``` before a function will cause Rust to recognize it as function, which in example ```println``` will be interpreted as ```fn println()``` instead of printing out some text.
 
-### **Example**
+### Example
 
     struct Person{
       name: String,
@@ -73,7 +77,7 @@ Without ```!``` before a function will cause Rust to recognize it as function, w
 
 ```pub(crate)``` before ```fn main()``` is optional, even without it ```fn main()``` will execute normally.
 
-### **Build**
+### Build
 
     cd <to_rust_project_folder>
     cargo build
