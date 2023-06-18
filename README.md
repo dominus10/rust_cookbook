@@ -1,6 +1,6 @@
 <h1>Minimal Rust Cookbook for JS/TS developer </h1>
 
-This is not a definitive guide, but aimed to be an entry point itself into Rust. This guide will be updates on non-regular basis.
+This is not a definitive guide, but aimed to be an entry point itself into Rust. This guide will be updated on non-regular basis.
 
 ## Setup
     curl https://sh.rustup.rs -sSf | sh
@@ -51,7 +51,7 @@ TODO LATER
 | --- | --- |
 | println(); | println!(); |
 
-Without ```!``` before a function will cause Rust to recognize it as function, which in example ```println``` will be interpreted as ```fn println()``` instead of printing out some text.
+Without ```!``` after a macro will cause Rust to recognize it as function, which in example ```println``` will be interpreted as ```fn println()``` instead of printing out some text.
 
 ### Example
 ```ruby
