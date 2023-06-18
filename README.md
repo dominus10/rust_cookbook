@@ -43,7 +43,7 @@ This is not a definitive guide, but aimed to be an entry point itself into Rust.
 
 ### Method Parameter
 
-
+TODO LATER
 
 ### Macro
 
