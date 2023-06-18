@@ -1,6 +1,6 @@
-## Minimal Rust Cookbook for JS/TS developer
+<h1>Minimal Rust Cookbook for JS/TS developer </h1>
 
-### Setup
+## Setup
     curl https://sh.rustup.rs -sSf | sh
     sudo apt-get install build-essential
     mkdir <rust_project_name>
