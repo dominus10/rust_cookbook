@@ -24,7 +24,7 @@
 | --- | --- | --- |
 | class ClassName{} | struct structName{} | |
 |  | impl implName{} | Used to define function for struct |
-| function functionName{} | fn fnName{} | |
+| function functionName{} | fn fnName(){} | |
 | let varName = <br/> const constName = | let mut varName =  <br/> let constName =  | (notice the use of mut) |
 
 **Primitives**
