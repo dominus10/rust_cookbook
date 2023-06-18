@@ -53,6 +53,19 @@ TODO LATER
 
 Without ```!``` after a macro will cause Rust to recognize it as function, which in example ```println``` will be interpreted as ```fn println()``` instead of printing out some text.
 
+### Macro List
+
+| Macro | Uses |
+| --- | --- |
+| println!() | print line to console |
+| format!() | create formatted string |
+| vec!() | create dynamic array |
+| assert!() | type assertion |
+| assert_eq!() | type assertion (recommended) |
+| panic!() | throw error message |
+| match!() | pattern matching |
+| concat!() | string concatenation |
+
 ### Example
 ```ruby
 struct Person{
